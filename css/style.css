@@ -1,0 +1,88 @@
+	@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+	body {
+		margin: 0;
+		padding: 0;
+		background: #0a0a0a;
+	}
+
+	.container-jogo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.tela-jogo {
+		margin-top: 10px;
+		border: solid 3px #04af00;
+		max-width: 360px;
+		color: #04af00;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-family: "Press Start 2P";
+		font-size: 0.70em;
+		padding: 10px;
+	}
+
+
+	.tela-jogo h2{
+		text-align: center;
+		font-size: 1.55em;
+	}
+
+	.controle {
+		border: solid 3px #04af00;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 300px;
+		font-family: "Press Start 2P";
+		padding: 5px;
+	}
+
+	.btn-game {
+		margin: 3px;
+		font-size: 25px;
+		border-radius: 50px;
+		color: #04af00;
+		border: solid 2.5px #04af00;
+		background: #0a0a0a;
+	}
+
+	.btn-game:hover {
+		box-shadow: 0 0 4px 0 #04af00;
+	}
+
+	.cl {
+		margin-right: 30px;
+	}
+
+	.dificuldades {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.btn-dificuldade {
+		border: solid 1px ;
+		font-family: "Press Start 2P" !important;
+		background: transparent;
+		padding: 5px;
+		margin: 3px;
+		border-radius: 4px;
+		font-size: 10px;
+		transform: translateY(-10px);
+	}
+
+	.active {
+		color: #04af00;
+		border: solid 1px #04af00;
+	}
+
+
+
+
+
