@@ -1,27 +1,43 @@
-function cima(){
-vel = 1;
-vx = 0;
-vy = -vel;
+function cima() {
+  vx = 0; 
+  vy = -vel;
 }
-window.onload = function() {
- stage = document.getElementById('stage');
- ctx = stage.getContext("2d");
+
+function baixo() {
+  vx = 0;
+  vy = vel;  
+}
+
+function esquerda() {
+  vx = -vel;
+  vy = 0;
+}
+
+function direita () {
+ vx = vel;
+ vy = 0;
+}
+
+window.onload = function teste() {
+var stage = document.getElementById('stage');
+var ctx = stage.getContext("2d");
 document.addEventListener("keydown", keyPush);
 setInterval(game, 130);
 
- vel = 1;
+  vel = 1;
   score = [];
   core = 0;
 
-   vx = vy = 0;
-   px = 10;
-   py = 15;
-   tp = 17.5;
-   qp = 17;
-   ax = ay = 15;
+  vx = vy = 0;
+  px = 10;
+  py = 15;
+  tp = 17.5;
+  qp = 17;
+  ax = ay = 15;
 
-   caminho = [];
+  caminho = [];
   rastro = 2;
+
 
   function game() {
 
@@ -49,7 +65,7 @@ setInterval(game, 130);
   ctx.fillRect(ax*tp, ay*tp, tp,tp);
 
   ctx.fillStyle = "#04af00";
-  for( i = 0; i < caminho.length; i++){
+  for(var i = 0; i < caminho.length; i++){
     ctx.fillRect(caminho[i].x*tp, caminho[i].y*tp, tp,tp);
     if(caminho[i].x == px && caminho[i].y == py) {
     vx = vy = 0;
