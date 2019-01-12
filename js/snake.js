@@ -19,10 +19,10 @@ function direita () {
 }
 
 window.onload = function teste() {
-var stage = document.getElementById('stage');
-var ctx = stage.getContext("2d");
+stage = document.getElementById('stage');
+ctx = stage.getContext("2d");
 document.addEventListener("keydown", keyPush);
-setInterval(game, 130);
+setInterval(game, 120);
 
   vel = 1;
   score = [];
