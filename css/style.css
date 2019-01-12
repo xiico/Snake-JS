@@ -47,10 +47,12 @@
 		font-size: 25px;
 		border-radius: 5px;
 		color: #04af00;
-		border: solid 2.5px #04af00;
+		border: solid 2px #04af00;
 		background: #0a0a0a;
 		align-items: center;
 		justify-content: center;
+		height: 40px;
+		width: 40px;
 	}
 
 	.btn-game:hover {
