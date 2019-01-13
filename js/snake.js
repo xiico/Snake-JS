@@ -22,7 +22,7 @@ window.onload = function teste() {
 stage = document.getElementById('stage');
 ctx = stage.getContext("2d");
 document.addEventListener("keydown", keyPush);
-setInterval(game, 120);
+setInterval(game, 140);
 
   vel = 1;
   score = [];
