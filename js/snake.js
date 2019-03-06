@@ -1,22 +1,27 @@
-function cima() {
+const upsnake = document.getElementById("cima");
+const downsnake = document.getElementById("baixo");
+const leftsnake = document.getElementById("esquerda");
+const rigthsnake = document.getElementById("direita");
+
+upsnake.addEventListener("click", (event) => {
   vx = 0; 
   vy = -vel;
-}
+});
 
-function baixo() {
+downsnake.addEventListener("click", (event) => {
   vx = 0;
   vy = vel;  
-}
+});
 
-function esquerda() {
+leftsnake.addEventListener("click", (event) => {
   vx = -vel;
   vy = 0;
-}
+});
 
-function direita () {
- vx = vel;
+rigthsnake.addEventListener("click", (event) => {
+  vx = vel;
  vy = 0;
-}
+});
 
 window.onload = function teste() {
 stage = document.getElementById('stage');
